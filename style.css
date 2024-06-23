@@ -1,0 +1,263 @@
+ .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-section {
+            display:flex;
+            gap: 0;
+        }
+             
+        .shop-now {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2c66cb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5px;
+            font-family: Arial, sans-serif;
+            border-radius: 0px;
+            font-size: 9px;
+        }
+        .banner {
+            flex: 1;
+            position: relative;
+            margin-bottom: 0;
+           
+        }
+        .banner img {
+            width: 700px;
+            height: 335px;
+           
+        }
+        .banner .shop-now {
+                position: absolute;
+                top: 280px;
+                right: 20px; 
+                padding: 10px 25px;
+                background-color: #ecf2f6;
+                color: #1a213d;
+                text-decoration: none;
+                border-radius: 0px; 
+                font-family: Arial, sans-serif;
+                font-size: 13px; 
+                font-weight: bold;
+            
+        }
+        .ad-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            
+        }
+        
+        .ad-item {
+            position: relative;
+            text-align: center;
+        }
+        
+        .ad-item img {
+            width: 460px;
+            height: 165px;
+      
+        }
+        .ad-item:nth-child(1) .shop-now {
+            position: absolute;
+            bottom: 10px;
+            left: 75%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #f6f9fa;
+            color: #761a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            border-radius: 0px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        
+        .ad-item:nth-child(2) .shop-now {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #2c66cb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            border-radius: 0px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+      
+        
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .category {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .category img {
+            width: 100px;
+          height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .category p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+               color: #504e4e;
+               letter-spacing: 1px;
+        }
+        
+        .category .shop-now {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #2c66cb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-style: arial;
+            flex-grow: 1;
+            font-family: Arial, sans-serif;
+            border-radius: 0px;
+            font-size: 12px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 90%;
+            max-width: 1400px;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .carousel-container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 18px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+
+        .carousel-item {
+            position: relative;
+            flex: 0 0 12%; 
+            box-sizing: border-box;
+            padding: 5px;
+            text-align: center;
+            
+        }
+
+        .product-info {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+            width: 230px;
+            height:250px ;
+        }
+
+        .product-info img {
+            margin: auto;
+             width:100px ;
+              height:130px ;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: #5d5b5b;
+        }
+
+        .price {
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .arrows {
+            position: relative;
+            
+        }
+
+        .arrow {
+            position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:#a8a3a3; 
+    color: rgb(255, 246, 246); 
+    border: 2px solid #a8a3a3; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px; 
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+
+        .dots {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
